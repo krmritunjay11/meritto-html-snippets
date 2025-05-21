@@ -1,0 +1,36 @@
+{
+  "name": "meritto-html-snippets-ai",
+  "displayName": "Meritto HTML Snippets AI",
+  "description": "Suggest reusable HTML UI snippets in .html files using OPENAI",
+  "version": "0.0.2",
+  "publisher": "krmritunjay11",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "main": "./extension.js",
+  "icon": "media/icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "html",
+        "aliases": [
+          "HTML",
+          "html"
+        ],
+        "extensions": [
+          ".html"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
