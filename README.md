@@ -64,7 +64,7 @@ None at the moment.
 
 ## Release Notes
 
-### 0.0.4
+### 0.0.6
 
 - Initial release with dynamic snippet fetching from BrandFactory
 - Supports HTML snippet completions in `.html` files
