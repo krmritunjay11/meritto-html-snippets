@@ -3,7 +3,7 @@ const fetch = require('node-fetch'); // or use axios
 const { Configuration, OpenAIApi } = require('openai');
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY, // store your API key securely
+  apiKey: process.env.OPENAI_API_KEY, // API key securely stored in .env
 });
 const openai = new OpenAIApi(configuration);
 
@@ -32,7 +32,7 @@ async function fetchSnippetsWithOpenAI(siteContent) {
 }
 
 async function getSiteContent() {
-  const res = await fetch('https://brandfactory.example.com/snippets-page');
+  const res = await fetch('https://brandfactory.nopaperforms.in/');
   return await res.text(); // raw HTML or text
 }
 
@@ -66,4 +66,3 @@ function activate(context) {
 function deactivate() {}
 
 module.exports = { activate, deactivate };
-
